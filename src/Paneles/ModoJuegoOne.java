@@ -15,16 +15,17 @@ public class ModoJuegoOne extends JPanel{
         this.setBackground(Color.DARK_GRAY);
         this.setLayout(null);
         back=new JLabel("Volver al menú");
-        back.setBounds(60,18,150,45);
+        back.setBounds(60,18,200,45);
         back.setFont(new Font(Font.SANS_SERIF,Font.PLAIN,20));
         back.setForeground(Color.WHITE);
         add(back);
-        t=new Tablero(195,500);
+        t=new Tablero(170,500);
         
     }
     @Override
     public void paint(Graphics g){
         super.paint(g);
         t.paint(g);
+        
     }
 }

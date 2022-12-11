@@ -1,8 +1,11 @@
 package Paneles;
 
 
+import GamesMode.GameOne;
+import GamesMode.GameTwo;
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
@@ -21,15 +24,15 @@ public class Principal extends JPanel{
         private JLabel tm, j, sj,cj, e, da;
         private String s;
         private int x=372,y=415;
-        
-        
+        private int gamemode;
         public Principal(JFrame v){
             vent=v;
+            this.setLayout(null);
             this.setBackground(Color.DARK_GRAY);
             // TÍTULO DEL MENÚ
             
             tm=new JLabel("Rompecabezas");
-            tm.setBounds(175, 0, 511, 150);
+            tm.setBounds(175, 50, 511, 150);
             tm.setFont(new Font(Font.SANS_SERIF,Font.BOLD,70));
             tm.setForeground(Color.WHITE);
             add(tm);
@@ -77,6 +80,7 @@ public class Principal extends JPanel{
             sj.addMouseListener(new MouseAdapter(){
                 public void mouseClicked(MouseEvent e){
                     PanelGamesMode();
+                    
                 }
             });            
             
@@ -90,7 +94,20 @@ public class Principal extends JPanel{
                 public void mouseClicked(MouseEvent e){
                     PanelComoJugar();
                 }
-            });             
+            });    
+            
+    
+            pcj=new ComoJugar(this);
+            pcj.setSize(900,900);
+            pcj.setLocation(0,0);
+            
+            paneljugar=new Jugar(this);
+            paneljugar.setSize(900, 900);
+            paneljugar.setLocation(0, 0);
+            
+            pgm=new GamesMode(this);
+            pgm.setSize(900,900);
+            pgm.setLocation(0,0);
         }
         
         @Override
@@ -115,46 +132,61 @@ public class Principal extends JPanel{
             this.x=x; this.y=y;
         }*/
     public void PanelComoJugar(){
-        pcj=new ComoJugar();
+        /*pcj=new ComoJugar(this);
         pcj.setSize(900,900);
-        pcj.setLocation(0,0);
+        pcj.setLocation(0,0);*/
         
-        removeAll();
+        DesactivarPrincipal();
+        
+        
         add(pcj, BorderLayout.CENTER);
         revalidate();
         repaint();
     }    
     
     public void PanelGamesMode(){
-        pgm=new GamesMode();
+        /*pgm=new GamesMode(this);
         pgm.setSize(900,900);
-        pgm.setLocation(0,0);
+        pgm.setLocation(0,0);*/
+        DesactivarPrincipal();
         
-        removeAll();
-        add(pgm, BorderLayout.CENTER);
+        this.add(pgm, BorderLayout.CENTER);
         revalidate();
         repaint();
+        
+        /*removeAll();
+        add(pgm, BorderLayout.CENTER);
+        revalidate();
+        repaint();*/
+        
     }    
         
     public void PanelJugar(){
-        paneljugar=new Jugar();
+        /*paneljugar=new Jugar(this);
         paneljugar.setSize(900, 900);
-        paneljugar.setLocation(0, 0);
-        
-        removeAll();
+        paneljugar.setLocation(0, 0);*/ 
+        paneljugar.setGame(gamemode);
+        DesactivarPrincipal();
         add(paneljugar, BorderLayout.CENTER);
         revalidate();
         repaint();
     }  
 
     public void DesactivarPrincipal(){
- 
+        for (Component component : this.getComponents()) {
+                component.setVisible(false);
+                component.setEnabled(false);
+        }
     }
     
-    public void settVen(JFrame v){
-        vent=v;
+    public void set(int gm){
+        if(gm==1){
+            gamemode=1;
+        }else{
+            gamemode=0;
+        }
     }
-
+    
     /*@Override
     public void mouseClicked(MouseEvent e) {
        System.out.println("hola");   

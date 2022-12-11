@@ -3,13 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/Paneles/Principal.java</file>
-            <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/Clases/Pieza.java</file>
+            <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/GamesMode/GameOne.java</file>
             <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/Paneles/Jugar.java</file>
             <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/Paneles/GamesMode.java</file>
+            <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/Clases/InfIzq.java</file>
+            <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/GamesMode/GameTwo.java</file>
+            <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/Paneles/ComoJugar.java</file>
+            <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/Clases/InfDer.java</file>
+            <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/Clases/Figura.java</file>
+            <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/Paneles/Principal.java</file>
+            <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/Clases/Pieza.java</file>
+            <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/Clases/SupDer.java</file>
             <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/Paneles/ModoJuegoOne.java</file>
             <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/Ventana/Ventana.java</file>
-            <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/Paneles/ComoJugar.java</file>
+            <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/Clases/Tablero.java</file>
+            <file>file:/C:/Users/Cris/OneDrive%20-%20Universidad%20de%20Concepción/Escritorio/ProyectoFinalP2/Rompecabezas/src/Clases/SupIzq.java</file>
         </group>
     </open-files>
 </project-private>

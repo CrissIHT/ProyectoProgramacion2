@@ -2,14 +2,18 @@
 package Paneles;
 
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Font;
 import java.awt.Graphics;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class GamesMode extends JPanel{
     private JLabel back, mo, md, ls;
-    public GamesMode(){
+    public GamesMode(Principal p){
+
         this.setBackground(Color.DARK_GRAY);
         this.setLayout(null);
         
@@ -37,11 +41,56 @@ public class GamesMode extends JPanel{
         md.setForeground(Color.WHITE);
         add(md);
         
+        back.addMouseListener(new MouseAdapter(){
+            @Override
+            public void mouseClicked(MouseEvent e){
+                
+                for (Component component : p.getComponents()) {
+                
+                component.setVisible(true);
+                component.setEnabled(true);
+                backPanel();
+                revalidate();
+                
+                }
+            }
+        });
         
+        mo.addMouseListener(new MouseAdapter(){
+            
+            public void mouseClicked(MouseEvent e){
+               p.set(1);
+               System.out.println("Modo de juego uno seleccionado");
+            }
+        });
         
+        md.addMouseListener(new MouseAdapter(){
+            @Override
+            public void mouseClicked(MouseEvent e){
+               p.set(0);
+               System.out.println("Mmodo de juego dos seleccionado"); 
+            }
+        });
     }
     
     public void paint (Graphics g){
         super.paint(g);
+        /*g.setColor(Color.WHITE);
+        if(gmone==true){
+            g.fillOval(300, 400, 15, 15);
+        }else{
+            g.fillOval(300, 470, 15, 15);
+        }
+       repaint();*/
     }
+    
+    public void backPanel(){
+        
+        for (Component component : this.getComponents()) {
+                component.setVisible(false);
+                component.setEnabled(false);
+                }
+    }
+    
+    
 }
