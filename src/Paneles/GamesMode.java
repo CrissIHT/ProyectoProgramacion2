@@ -68,20 +68,13 @@ public class GamesMode extends JPanel{
             @Override
             public void mouseClicked(MouseEvent e){
                p.set(0);
-               System.out.println("Mmodo de juego dos seleccionado"); 
+               System.out.println("Modo de juego dos seleccionado"); 
             }
         });
     }
     
     public void paint (Graphics g){
         super.paint(g);
-        /*g.setColor(Color.WHITE);
-        if(gmone==true){
-            g.fillOval(300, 400, 15, 15);
-        }else{
-            g.fillOval(300, 470, 15, 15);
-        }
-       repaint();*/
     }
     
     public void backPanel(){

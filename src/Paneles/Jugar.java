@@ -8,6 +8,9 @@ import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
@@ -20,29 +23,18 @@ public class Jugar extends JPanel{
         
         
         this.setBackground(Color.DARK_GRAY);
-        this.setLayout(null);
-        
-        /*back=new JLabel("Volver al menú");
-        back.setBounds(60,40,150,45);
-        back.setFont(new Font(Font.SANS_SERIF,Font.PLAIN,20));
-        back.setForeground(Color.WHITE);
-        add(back);
-        
-        back.addMouseListener(new MouseAdapter(){
-            @Override
-            public void mouseClicked(MouseEvent e){
-                System.out.println(get());
-            }
-        });*/
-        
-        
+        this.setLayout(null);  
         
     }
     @Override
     public void paint(Graphics g){
         super.paint(g);
         if(gamemode==0){
-            gt=new GameTwo();
+            try {
+                gt=new GameTwo();
+            } catch (IOException ex) {
+                Logger.getLogger(Jugar.class.getName()).log(Level.SEVERE, null, ex);
+            }
             gt.paint(g);
         }else{
             go=new GameOne();

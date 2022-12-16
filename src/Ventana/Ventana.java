@@ -1,7 +1,6 @@
 package Ventana;
 
 import Paneles.GamesMode;
-import Paneles.ModoJuegoOne;
 import Paneles.Principal;
 import java.awt.BorderLayout;
 import javax.swing.JFrame;

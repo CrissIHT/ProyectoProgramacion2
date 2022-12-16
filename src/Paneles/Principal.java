@@ -114,28 +114,11 @@ public class Principal extends JPanel{
         public void paint(Graphics g){
             super.paint(g);
             g.setColor(Color.white);
-            /*g.fillRect(400, 415, 92, 25);
-            g.fillRect(250, 473, 410, 25);
-            g.fillRect(355, 535, 178, 25);
-            g.fillRect(410, 590, 74, 25);*/
+
         }
         
-        /*public void PaintPuntero(int x, int y, Graphics g){
-            g.setColor(Color.WHITE);
-            int[] xPoints={x,x+20,x};
-            int[] yPoints={y,y+10,y+20};
-            g.fillPolygon(xPoints, yPoints, 3);
-            this.repaint();
-        }
-        
-        public void MovPuntero(int x,int y){
-            this.x=x; this.y=y;
-        }*/
     public void PanelComoJugar(){
-        /*pcj=new ComoJugar(this);
-        pcj.setSize(900,900);
-        pcj.setLocation(0,0);*/
-        
+    
         DesactivarPrincipal();
         
         
@@ -145,26 +128,15 @@ public class Principal extends JPanel{
     }    
     
     public void PanelGamesMode(){
-        /*pgm=new GamesMode(this);
-        pgm.setSize(900,900);
-        pgm.setLocation(0,0);*/
-        DesactivarPrincipal();
-        
+
+        DesactivarPrincipal(); 
         this.add(pgm, BorderLayout.CENTER);
         revalidate();
-        repaint();
-        
-        /*removeAll();
-        add(pgm, BorderLayout.CENTER);
-        revalidate();
-        repaint();*/
-        
+        repaint();       
     }    
         
     public void PanelJugar(){
-        /*paneljugar=new Jugar(this);
-        paneljugar.setSize(900, 900);
-        paneljugar.setLocation(0, 0);*/ 
+
         paneljugar.setGame(gamemode);
         DesactivarPrincipal();
         add(paneljugar, BorderLayout.CENTER);
