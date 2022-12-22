@@ -3,6 +3,7 @@ package Ventana;
 import Paneles.GamesMode;
 import Paneles.Principal;
 import java.awt.BorderLayout;
+import java.io.IOException;
 import javax.swing.JFrame;
 
 
@@ -10,7 +11,7 @@ import javax.swing.JFrame;
 public class Ventana extends JFrame {
 
     private Principal p;
-        public Ventana(){
+        public Ventana() throws IOException{
             
             p= new Principal(this);
             p.setLayout(null); // desactivamos layout por defecto

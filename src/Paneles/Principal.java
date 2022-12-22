@@ -1,8 +1,6 @@
 package Paneles;
 
 
-import GamesMode.GameOne;
-import GamesMode.GameTwo;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
@@ -11,6 +9,7 @@ import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.io.IOException;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -25,7 +24,7 @@ public class Principal extends JPanel{
         private String s;
         private int x=372,y=415;
         private int gamemode;
-        public Principal(JFrame v){
+        public Principal(JFrame v) throws IOException{
             vent=v;
             this.setLayout(null);
             this.setBackground(Color.DARK_GRAY);
